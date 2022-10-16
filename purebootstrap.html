@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="us">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, intial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script type="text/javascript" src="bootstrap.bundle.js" ></script>
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script  src="bootstrap.bundle.min.js"  ></script>
+	<script  src="all.js" ></script>
+	<title>Purebootstrap</title>
+<style>
+	.linkss:hover{
+		background-color: #eee;
+		transition: 0.5s;
+	}
+	.fn{
+		transition: 0.9s;
+		box-shadow: 0px 0px 1px white, 0px -1px 0px white,0px 0px 1px white;
+	}
+	.fn:hover{
+		box-shadow: 2px 2px 4px gray, 1px -1px 0px gray,1px 0px 3px;
+		animation: example 1s 8 alternate;
+	}
+	@keyframes example{
+	0%{
+		transform: rotateZ(0deg) 1s;
+	}
+	50%{
+		transform: rotateZ(-45deg);
+	}
+	100%{
+		transform: rotateZ(45deg);
+	}
+}
+	.pics{
+		transition: 0.8s;
+	}
+	.pics:hover{
+		box-shadow: 2px 2px 4px  #fa923f,0px -1px 0px  #fa923f,-2px 0px 0px #fa923f;
+		transition: 0.8s;
+		cursor:pointer;
+	}
+	.bgcolors{
+		background-image: url(joker2.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.qus{
+		transition: 1s;
+	}
+	.qus:hover{
+		transform: scale(1.1,1.1);
+	}
+	.qu{
+		font-family: algerian;
+		transition: 1s;
+		animation: exam 2s alternate;
+	}
+	@keyframes exam{
+		0%{
+			transform: translateX(-100px);
+			opacity:0;
+		}
+		100%{
+			transform: translateX(0px);
+			opacity: 1;
+		}
+	}
+	.pics{
+		animation: picss 1s 10 alternate;
+	}
+	@keyframes picss{
+	0%{
+		transform: rotateZ(0deg) 1s;
+	}
+	50%{
+		transform: rotateZ(-10deg);
+	}
+	100%{
+		transform: rotateZ(10deg);
+	}
+}	.spin{
+	/*max-width: 400px;*/
+	transition: .3s;
+}
+	.spin:hover{
+		transition: .3s; 
+		box-shadow: 2px 2px 4px  #333,0px -1px 0px  #333,-2px 0px 0px #333;
+	}
+	.spins{
+		transition: .3s;
+	}
+	.spins:hover{
+		transition: .3s;
+		transform: scale(1.1,1.1);
+	}
+	.spinss{
+		max-width: 600px;
+	}
+	.colors{
+		background-color: #333;
+	}
+	.bgs{
+		background-color: #333;
+		opacity: 1;
+	}
+</style>
+</head>
+<body>
+	<!-- Nav bar starts -->
+	<nav class="fixed-top navbar navbar-expand-md p-2 navbar-light bgs">
+		<a href="#" class="ml-3 navbar-brand"><i class="fas fa-user text-warning"></i></a>
+
+<button type="button" data-toggle="collapse" data-target="#mynav" class="navbar-toggler bg-dark"><span class="navbar-toggler-icon"></span></button>
+	<div class="collapse navbar-collapse justify-content-between" id="mynav">
+		<ul class="navbar-nav">
+			<li class="nav-item p-1 text-uppercase font-weight-bold"><a class="px-3 nav-link text-light" href="Purebootstrap.html">home</a></li>
+			<li class="nav-item p-1 text-uppercase font-weight-bold"><a class="px-3 nav-link text-light" href="#">status</a></li>
+			<li class="nav-item p-1 text-uppercase font-weight-bold"><a class="px-3 nav-link text-light" href="#">about</a></li>
+			<li class="pt-1 text-uppercase font-weight-bold dropdown">
+				<a class="px-3 nav-link text-light dropdown-toggle"  data-toggle="dropdown" href="#">language</a>
+				<div class="dropdown-menu">
+					<a class="dropdown-item linkss" style="text-decoration: none; font-weight: bold;" href="#">C#</a>
+					<a class="dropdown-item linkss" style="text-decoration: none; font-weight: bold;" href="#">Java</a>
+					<a class="dropdown-item linkss" style="text-decoration: none; font-weight: bold;" href="#">C++</a>
+				</div>
+			</li>
+		</ul>
+		<form class="form-inline">
+			<div class="form-group ml-3">
+				<input class="input-group-append form-control" type="text" placeholder="serach" /><div>
+				<button class="btn btn-info" type="button"><i class="fas fa-search"></i></button>
+			</div>
+			</div>
+		</form>
+	</div>
+	</nav>
+	<!-- Nav Ends -->
+
+	<!-- Banner start -->
+	<section>
+	<div class="container-fluid">
+		<div class="row justify-content-center align-content-center bgcolors" style="height: 100vh;">
+			<div class="qus col-lg-7 col-sm-10 text-center">
+			<h1 class="qu text-warning text-capitalize display-2">
+				Joker Quotes
+			</h1>
+			<h2 class="font-weight-light font-italic text-white">
+				Live like villain die Like Hero!
+			</h2>
+			<a class="fn btn btn-warning p-3 m-3" href="#in">Input</a>
+			<a class="fn btn btn-danger p-3 m-3" href="#">Output</a>
+		</div>
+		</div>
+	</div>
+</section>
+<!-- banner ends -->
+
+
+
+
+<!-- skill starts -->
+<section>
+	<div class="container-fluid p-5">
+		<div class="row">
+			<div class="col text-center text-info">
+		<h1 class="text-warning display-2">
+			Skills
+		</h1>
+		<span class="font-weight-bold">Walk like the king Or walk like the one who
+		don't care who's the king</span>
+		</div>
+	</div>
+	<div class="row text-center pt-5">
+		<div class="col-lg-4 col-sm-10 mx-auto mb-5">
+			<i class="fas fa-desktop text-warning fa-6x"></i>
+			<h1 class="mt-3">Development</h1>
+			<p class="text-muted">A wise king never seek out for war but always must ready for it
+			this what true king mean</p>
+		<a class="btn btn-outline-warning" href="#">learn more</a>
+		</div>
+
+		<div class="col-lg-4 col-sm-10 mx-auto mb-5">
+				<i class="fas fa-edit text-warning fa-6x"></i>
+			<h1 class="mt-3">Design</h1>
+			<p class="text-muted">Once a legend said if you are good at something
+			never do it for free </p>
+		<a class="btn btn-outline-warning" href="#">learn more</a>
+		</div>
+
+		<div class="col-lg-4 col-sm-10 mx-auto mb-5">
+				<i class="fas fa-cogs text-warning fa-6x"></i>
+			<h1 class="mt-3">Creativity</h1>
+			<p class="text-muted">She taught that she broke my heart but she
+			didn't knew that my heart is Nokia 240</p>
+			<a class="btn btn-outline-warning" href="#">learn more</a>
+		</div>
+	</div>
+</div>
+</section>
+<!-- skill ends -->
+
+<!-- project start section -->
+<section class="p-2">
+	<div class="container-fluid text-center align-item-center">
+		<div class="row">
+			<div class="col-lg-3 col-sm-6">
+				<img class="pics img-thumbnail" src="project1.jpg"></img>
+				<h2 class="mt-2 text-warning">ShadowCompany</h2>
+				<p class="text-info ">
+					when you were mine nothing was fine Now iam alone that's why iam shine
+				</p>
+			</div>
+			<div class="col-lg-3 col-sm-6 mt-2 ">
+				<img class="pics img-thumbnail" src="project2.jpg"></img>
+				<h2 class="mt-2 text-warning">ShadowCompany</h2>
+				<p class="text-info ">
+					She said forget me 😑 i replied who are you 🤣😂
+				</p>
+			</div>
+			<div class="col-lg-3 col-sm-6 mt-3">
+				<img class="pics img-thumbnail "  src="project3.jpg"></img>
+				<h2 class="mt-2 text-warning">ShadowCompany</h2>
+				<p class="text-info ">
+					She asked me to forgive me I replied i have big heart I forgive you by forgetting you
+				</p>
+			</div>
+			<div class="col-lg-3 col-sm-6 mt-4">
+				<img class="img-thumbnail pics" src="project4.jpg"></img>
+				<h2 class="mt-2 text-warning">ShadowCompany</h2>
+				<p class="text-info ">
+					Your attitude may be hurt me but mine can kill you
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- project end section -->
+
+<!-- Team start  -->
+<section class="p-5 bg-secondary">
+	<div class="container-fluid ">
+		<div class="row text-center">
+			<div class="col">
+				<h1 class="display-2 text-warning pb-3">
+				Joker Team
+				</h1>
+				<p class="mb-5 text-white">
+					If you want to be strong learn to fight alone <br>
+					I talk, I smile, I laugh too. But, becarefull when iam silent.
+
+				</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="spinss col-lg-4 col-sm-6 spins  mb-4">
+				<div class="spin card">
+					<img src="joker.jpg" height="239px" class="card-img-top">
+						<div class="card-body">
+							<div class="card-title">
+								<h3>Heath degar</h3>
+								<div class="card-subtitle">
+								<span>Kids fall for beauty,men fall for love,Legends never fall </span>
+								</div>
+								<div class="text-right">
+									<a href="#"><i class="fab fa-twitter text-info mt-2 mx-2  fa-2x"></i></a>
+									<a href="#"><i class="fab fa-facebook mt-2 mx-2  fa-2x"></i></a>
+									<a href="#"><i class="fab fa-youtube text-danger mt-2  mx-2 fa-2x"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			<div class="spinss col-lg-4 col-sm-6 spins  mb-4">
+				<div class="spin card">
+					<img src="joker3.jpg" height="239px" class="card-img-top">
+						<div class="card-body">
+							<div class="card-title">
+								<h3>Joker:Dark-knight</h3>
+								<div class="card-subtitle">
+								<span>No need to block you i just want you to see what you have lose</span>
+								</div>
+								<div class="text-right">
+									<a href="#"><i class="fab fa-twitter text-info mt-2 mx-2 fa-2x"></i></a>
+									<a href="#"><i class="fab fa-facebook mt-2 mx-2 fa-2x"></i></a>
+									<a href="#"><i class="fab fa-youtube mt-2  text-danger mx-2 fa-2x"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			<div class="spinss col-lg-4  col-sm-6 spins mb-4">
+				<div class="spin card">
+					<img src="hacker.jpg" style="height:238px;" class="card-img-top">
+						<div class="card-body">
+							<div class="card-title">
+								<h3>Hackers</h3>
+								<div class="card-subtitle">
+								<span>We are legion,We do not forget we do not forgive Expect us
+									shutdown Electricity -t 2;
+								</span>
+								</div>
+								<div class="text-right">
+									<a href="#"><i class="fab fa-twitter text-info mt-2 mx-2  fa-2x"></i></a>
+									<a href="#"><i class="fab fa-facebook  mt-2 mx-2  fa-2x"></i></a>
+									<a href="#"><i class="fab fa-youtube text-danger mt-2  mx-2 fa-2x"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+</section>
+<!-- Team End -->
+
+<!-- progress Start -->
+<section class="p-5">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="text-center col-lg">
+				<h1 class=" text-warning display-2 mb-3">Progress</h1>
+				<p>Sometimes human thinks they are good in everything but they don't</p>
+			</div>
+		</div>
+	</div>
+		<div class="row justify-content-center">
+			<div class="col-sm-10 text-secondary col-lg-6">
+				<h1>HTML</h1>
+				<div class="progress mb-5">
+					<div class="progress-bar progress-bar-striped active bg-danger" style="width:50%;">
+						50%
+					</div>
+				</div>
+				<h1>CSS</h1>
+				<div class="progress mb-5">
+					<div class="progress-bar" style="width: 75%;">
+						75%
+					</div>
+				</div>
+				<h1>JAVASCRIPT</h1>
+				<div class="progress mb-5">
+					<div class="progress-bar bg-info" style="width: 90%;">
+						90%
+					</div>
+				</div>
+				<h1>PHP</h1>
+				<div class="progress">
+					<div class="progress-bar bg-success" style="width: 98%;">
+						98%+
+					</div>
+				</div>
+			</div>
+		</div>
+</section>
+<!-- progress End -->
+
+<!-- Start -->
+<section class="p-5 bg-light" id="in">
+	<div class="container-fluid">
+		<div class="row text-center">
+			<div class="col-lg">
+				<h1 class="mb-2 text-warning display-2 font-weight-light">Contact Us</h1>
+				<p class="text-info">Never contact for those who left u they can hurt u more this is the law of humans</p>
+			</div>
+		</div>
+		<div class="row justify-content-center">
+			<div class="col-lg-6 col-sm-10 col-md-8">
+				<div class="text-secondary text-center">
+					<h1>Got Question?</h1>
+					<p>These is no pain no gain bro</p>
+				</div>
+					<form>
+						<div class="form-group">
+								<label for="username">Username</label>
+								<input type="text" class="form-control" id="username">
+						</div>
+						<div class="form-group">
+								<label name="email">Email</label>
+								<input type="text" class="form-control" id="email">
+						</div>
+						<div class="form-group">
+							<label name="message">message</label>
+								<textarea class="form-control" rows="3" id="message">
+								</textarea>
+						</div>
+						<div class="form-group">
+							<button type="submit" class="form-control btn btn-outline-warning">
+									Submit Question!
+						</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+</section>
+<!-- Ends -->
+
+<!-- footer starts here -->
+<section class="p-5 colors">
+	<div class="container">
+		<div class="row">
+			<div class="col text-center">
+				<div class=" text-light">
+					<h1 class="font-weight-light p-3">Pure Jokers Quotes</h1>
+					<h3 class="font-weight-light p-3 font-italic">Awesome we finaly found some specific tasks for u bro</h3>
+				</div>
+					<div class="text-center pt-1">
+						<a href="#"><i class="fab fa-facebook mx-3 fa-2x"></i></a>
+						<a href="#"><i class="fab fa-youtube text-danger mx-3 fa-2x"></i></a>
+						<a href="#"><i class="fab fa-twitter text-info mx-3 fa-2x"></i></a>
+						<a href="#"><i class="fab fa-google text-warning mx-3 fa-2x"></i></a>
+						<a href="#"><i class="fab fa-yahoo text-success mx-3 fa-2x"></i></a>
+					</div>
+				<div class="mt-4 text-light font-weight-light">
+					<span>&copy;copyright 2020- made by Hashmatullah Afroz "Kratos"</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- footer ends here -->
+</body>
+</html>
